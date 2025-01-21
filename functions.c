@@ -2109,11 +2109,11 @@ PauseMenu* InitPauseMenu(){
     pm->toMainMenu = false;
     pm->blur = (Color){0, 0, 0, 128};
     pm->background = LoadTexture("textures/ustawianie_bez_siatki.png");
-    pm->back = InitButton(SCREENWIDTH / 2, SCREENHEIGHT / 4 * 3, "textures/3x1.png", "Powrót", 40);
-    pm->volume = InitButton(SCREENWIDTH / 2, SCREENHEIGHT / 2, "textures/3x1.png", "Glosnosc", 40);
-    pm->menu = InitButton(SCREENWIDTH / 2, SCREENHEIGHT / 4, "textures/3x1.png", "Menu Glowne", 40);
+    pm->back = InitButton(SCREENWIDTH / 2, SCREENHEIGHT / 4 * 3, "textures/powrot.png", "", 40);
+    pm->volume = InitButton(SCREENWIDTH / 2, SCREENHEIGHT / 2, "textures/glosnosc.png", "", 40);
+    pm->menu = InitButton(SCREENWIDTH / 2, SCREENHEIGHT / 4, "textures/menu_glowne.png", "", 40);
 
-    pm->sound_back = InitButton(SCREENWIDTH / 2, SCREENHEIGHT / 6*5, "textures/3x1.png", "Powrót", 40);
+    pm->sound_back = InitButton(SCREENWIDTH / 2, SCREENHEIGHT / 6*5, "textures/powrot.png", "", 40);
     pm->all_sound = InitSlider(SCREENHEIGHT / 6, SCREENWIDTH / 7*2, SCREENWIDTH / 7*5, 50.0f, 60.0f, 60.0f, "textures/slider.png", "textures/1x1.png");
     pm->music = InitSlider(SCREENHEIGHT / 3 + 40, SCREENWIDTH / 7*2, SCREENWIDTH / 7*5, 50.0f, 60.0f, 60.0f, "textures/slider.png", "textures/1x1.png");
     pm->effects = InitSlider(SCREENHEIGHT / 2 + 80, SCREENWIDTH / 7*2, SCREENWIDTH / 7*5, 50.0f, 60.0f, 60.0f, "textures/slider.png", "textures/1x1.png");
